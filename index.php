@@ -6,6 +6,8 @@
  * description  :
  *      To display the demo product, please append url query ?product=classic-tee
  **************************************************/
+error_reporting(0);
+
 session_start();
 
 // header-guard
@@ -102,7 +104,7 @@ if (!empty($_GET[QUERY_KEY])) {
 <?php
     } else {
 ?>
-                <p class="err-msg">No product to display</p>
+            <p style="width:100%;text-align:center;" class="err-msg">No product to display. Please access at <em style="color:#369;">(your folder)/index.php?product=classic-tee</em></p>
 <?php
     }
 ?>
