@@ -1,0 +1,219 @@
+@charset "UTF-8";
+/********************************************************************************
+ * file         : style.css
+ * written by   : KotaroW
+ * date         : 11th November, 2020
+ * description: 
+ *      For the Technical Test for the Frontend Developer position at MR
+********************************************************************************/
+
+/* Gilroy Font */
+@font-face {
+    font-family: Gilroylight;
+    src: url("./Gilroy-Light.otf") format("opentype");
+}
+
+body {
+    margin: 0;
+    padding: 1rem 0;
+    font: normal 100%;
+    font-family: Gilroylight;
+    color: #222222;
+}
+
+h1, h2, h3 {
+    font-weight: normal;
+}
+
+main {
+    max-width: 1280px;
+    margin: auto;    
+}
+
+/*** cart section ***/
+main section:first-of-type {
+    font-size: 0.8em;
+/*    padding: 0.5rem 1rem; */
+    background: #F6F6F7;
+    margin-bottom: 2rem;
+    text-align: right;
+}
+
+main section:first-of-type > div {
+    display: inline-block;
+    position: relative;
+    margin-right: 0.5rem;
+}
+
+main section:first-of-type div > span {
+    display: inline-block;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: background 500ms ease-in-out;
+}
+
+#cart-fa {
+    display: none;
+}
+
+#cart-items {
+	position: absolute;
+    right: 0;
+    min-width: 240px;
+    background: #fff;
+    border: solid 1px #ccc;
+    border-top-width: 0;
+    opacity: 0;
+    transition: opacity 500ms ease-in-out, z-index 500ms ease-in-out;
+    z-index: -1;
+}
+
+.cart-shown {
+	background: #fff;
+}
+
+#cart-items.show-cart {
+    opacity: 1;
+    z-index: 1;
+}
+
+/*** cart item ***/
+div.cart-item {
+    display: flex;
+    margin: 1rem 0;
+    padding: 0 0.5rem;
+}
+
+div.cart-item > div {
+    width: 50%;
+}
+
+div.cart-item img {
+    display: block;
+    width: 100%;
+    max-width: 120px;
+}
+
+div.cart-item div span {
+    display: block !important;
+    text-align: left !important;
+}
+
+/*** product section ***/
+section:last-of-type {
+    display: flex;
+}
+
+section:last-of-type > div {
+    width: 50%;
+    padding: 0 1rem;
+}
+
+#product-img img {
+    display: block;
+    width: 100%;
+}
+
+#product-details > p {
+    font-size: 0.9em;
+    color: #888888;
+    margin-bottom: 2rem;
+}
+
+#product-details > span {
+    display: block;
+}
+
+/* price */
+#product-details > span:first-of-type {
+    font-weight: bold;
+    padding: 0.25rem 0;
+    border: solid 1px #CCCCCC;
+    border-width: 1px 0;
+}
+
+#size-selection  {
+    font-size: 0.8em;
+}
+
+/* required star */
+#size-selection > span > span {
+    color: #C90000;
+}
+
+#sizes {
+    margin: 0.5rem 0 1.5rem;
+}
+
+#sizes > span, button {
+    cursor: pointer;
+}
+
+#sizes > span {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    display: inline-block;
+    text-align: center;
+    font-family: calibri;
+    border: solid 1px #ccc;
+}
+
+/*** if size is selected ***/
+#sizes > span.size-selected {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border: solid 2px #222222;
+}
+
+
+/*** add to cart button ***/
+button {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+    -ms-appearance: none;
+    font: inherit;
+    font-size: 1.125em;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    border-radius: 0;
+    border: solid 2px #222222;
+    background: transparent;
+    transition: background 500ms ease-in-out;
+}
+
+button:disabled {
+    background: #999999;
+    cursor: not-allowed;
+}
+
+/* for error message*/
+/********** correct this later on!! *********/
+p.err-msg {
+    text-align: center;
+}
+
+
+/*** media query ***/
+@media screen and (max-width: 640px) {
+    section:last-of-type {
+        display: block;
+    }
+    
+    section:last-of-type > div {
+        width: auto;
+    }
+    
+    #cart-text {
+        display: none;
+    }
+    
+    #cart-fa {
+        display: inline;
+    }
+    
+    
+}
