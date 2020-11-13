@@ -29,8 +29,9 @@ Please follow the below format otherwise the errror message will be displayed.
 4. It's a single page website, any base stylesheets were used (no @import rules).
 5. Some of the colour requirements were missed and some more work is needed to adjust the page layout.
 
-## Known issue
+## Known issues
 To iterate through an array and process each array element, I used (array).map() function, however, (array).forEach() function would have been more suitable for that case. (In script.js at line 36). It could be rewritten:
+
 ```
 <script>
     .....
@@ -38,6 +39,10 @@ To iterate through an array and process each array element, I used (array).map()
     .....
 </script>
 ```
+Next thing is the layout for the Cart. According to the requirement, when opened, the Cart element needs to be enclosed in borders and the same requirement is applicable to the Cart item element. Currently, the layout looks as below:
+![Cart Layout](./image/issue.png)
+
+
 
 ## Contact
 Please feel free to contact me at <kotarochin@gmail.com> should you wish more detailed information.
