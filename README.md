@@ -40,7 +40,7 @@ To iterate through an array and process each array element, I used (array).map()
 </script>
 ```
 Next thing is the layout for the Cart. According to the requirement, when opened, the Cart element needs to be enclosed in borders and the same requirement is applicable to the Cart item element. Currently, the layout looks as below:
-![Cart Layout](./image/issue.png)
+![Cart Layout](https://raw.githubusercontent.com/KotaroW/MR-Technical-Test/main/image/classic-tee.jpg)
 
 
 
