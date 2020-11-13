@@ -22,6 +22,10 @@ A little bit about this repository.
 Please follow the below format otherwise the errror message will be displayed.
 *[your own directory]/index.php?product=classic-tee*
 
+## How the My Cart works
+PHP session is used to run the shopping cart. The shopping status is kept via serialize()/unserialize() function. Upon page access, the main page (index.php) checks whether there is a shopping cart. If there is a cart previously used, the page will display the number of items and the cart items accordingly.
+
+
 ## Please take note of that:
 1. I overran the 5-hour time limit simply because I didn't want to stop this fun process. The estimated time spent is probably 8 hours or so, for which I will willingly accept any point reduction. I chopped this process into 2 days and I was thinking to come up with solutions during the intervals. I might have to add those times to the total time spent on this test (8 hours + ? hours).
 2. I used Javascript "Arrow Notation" which does not work for the old platforms such as iOS 9. I conducted cross-browser checks for the layout but I stopped functionality testing for different platforms halfway through because my phone is an obsolete iOS.
