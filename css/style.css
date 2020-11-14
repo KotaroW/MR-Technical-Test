@@ -44,12 +44,13 @@ main section:first-of-type > div {
     position: relative;
     margin-right: 0.5rem;
 }
-
+/*** actually this is #my-cart ***/
 main section:first-of-type > div > span {
+    color: #888888;
     display: inline-block;
-    padding: 0.5rem;
+    padding: 8px; /* 0.5rem; */
     cursor: pointer;
-    transition: background 500ms ease-in-out;
+    transition: background 500ms ease-in-out, color 500ms ease-in-out;
 }
 
 #cart-fa {
@@ -62,14 +63,18 @@ main section:first-of-type > div > span {
     min-width: 240px;
     background: #fff;
     border: solid 1px #ccc;
-    border-top-width: 0;
+/*    border-top-width: 0; */
     opacity: 0;
     transition: opacity 500ms ease-in-out, z-index 500ms ease-in-out;
     z-index: -1;
 }
 
 .cart-shown {
+    color: #222222 !important;
 	background: #fff;
+    padding: 7px 7px 8px !important;
+    border: solid 1px #ccc;
+    border-bottom-width: 0;
 }
 
 #cart-items.show-cart {
@@ -97,6 +102,23 @@ div.cart-item img {
 div.cart-item div span {
     display: block !important;
     text-align: left !important;
+}
+
+/*** divider **/
+hr {
+    position: absolute;
+    bottom: -8px;
+    left: 1px;
+    right: 1px;
+    border: solid 2px #fff;
+    border-right-width: 0;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 400ms ease-in-out;
+}
+
+hr.show {
+    opacity: 1;
 }
 
 /*** product section ***/
