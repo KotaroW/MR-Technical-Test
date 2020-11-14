@@ -59,6 +59,7 @@ if (!empty($_GET[QUERY_KEY])) {
         <section>
             <div>
                 <span id="my-cart"><span id="cart-text">My Cart</span><i id="cart-fa" class="fas fa-shopping-cart"></i> ( <span id="num-items"><?php if ($my_cart) echo $my_cart->get_num_items(); else echo '0'; ?></span> )</span>
+                <hr>
                 <div id="cart-items">
 <?php
     if ($my_cart) {
