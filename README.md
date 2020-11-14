@@ -27,7 +27,7 @@ PHP session is used to run the shopping cart. The shopping status is kept via se
 
 
 ## Please take note of that:
-1. <span style="color:#800;">I overran the 5-hour time limit</span> simply because I didn't want to stop this fun process. The estimated time spent is probably 8 hours or so, for which I will willingly accept any point reduction. I chopped this process into 2 days and I was thinking to come up with solutions during the intervals. I might have to add those times to the total time spent on this test (8 hours + ? hours).
+1. ***I overran the 5-hour time limit*** simply because I didn't want to stop this fun process. The estimated time spent is probably 8 hours or so, for which I will willingly accept any point reduction. I chopped this process into 2 days and I was thinking to come up with solutions during the intervals. I might have to add those times to the total time spent on this test (8 hours + ? hours).
 2. I used Javascript "Arrow Notation" which does not work for the old platforms such as iOS 9. I conducted cross-browser checks for the layout but I stopped functionality testing for different platforms halfway through because my phone is an obsolete iOS.
 3. As I didn't have time to set up a database for this project, I used a PHP (abstract) class, called Product_Catalog, as an alternative (please see Product_Catalog class in classes.php).
 4. It's a single page website, any base stylesheets were used (no @import rules).
