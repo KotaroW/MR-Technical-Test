@@ -103,8 +103,11 @@ window.addEventListener(
         document.querySelector("#my-cart").addEventListener(
     	   "click",
             function (evt) {
-        	   this.classList.toggle("cart-shown");
-        	   document.querySelector("#cart-items").classList.toggle("show-cart");
+                this.classList.toggle("cart-shown");
+                // show divider (hr element)
+                document.querySelector("hr").classList.toggle("show");
+                
+                document.querySelector("#cart-items").classList.toggle("show-cart");
             },
     	   false
         );
