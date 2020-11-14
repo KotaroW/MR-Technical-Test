@@ -30,6 +30,16 @@ main {
     margin: auto;    
 }
 
+/*** disable user-select ***/
+#my-cart, #sizes {
+    user-select: : none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+}
+
+
 /*** cart section ***/
 main section:first-of-type {
     font-size: 0.8em;
